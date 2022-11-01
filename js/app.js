@@ -71,11 +71,13 @@ function and see if the test passes.*/
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-  // return the sum of a, b, & c
+  // invoke the function to add a and b
   let sumOfAandB = sum(a, b)[0]; // 11
   console.log('the value of sumOfAandB is: ', sumOfAandB, 'the value of c is: ', c);
+  // invoke the function again to add c to a and b
   let sumOfABandC = sum(sumOfAandB, c)[0]; // 16
   console.log('the value of sumOfABandC is: ', sumOfABandC);
+  // return the sum of a, b, & c
   return sumOfABandC;
 }
 
