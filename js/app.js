@@ -11,13 +11,13 @@ testSum() function below and check the console to see if the test passes.*/
 // Write your code here
 // sum() takes in two numbers, and returns an array with a number and string inside of it
 function sum(a, b) { //eslint-disable-line
-    let twoSum = a + b;
-    // console.log('In sum(), the value of twoSum is: ', twoSum);
-    let string = 'The sum of ' + a + ' and ' + b + ' is ' + twoSum + '.';
-    // console.log('In sum(), the value of string is: ', string);
-    let result = [twoSum, string];
-    // console.log('In sum(), the value of result is: ', result);
-    return result;
+  let twoSum = a + b;
+  // console.log('In sum(), the value of twoSum is: ', twoSum);
+  let string = 'The sum of ' + a + ' and ' + b + ' is ' + twoSum + '.';
+  // console.log('In sum(), the value of string is: ', string);
+  let result = [twoSum, string];
+  // console.log('In sum(), the value of result is: ', result);
+  return result;
 }
 
 // Here is the test for sum(); uncomment it to run it
@@ -38,11 +38,17 @@ function and see if the test passes.*/
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+  let two_multiply = a * b;
+  console.log('In multiply(), the value of two_multiply is: ', two_multiply);
+  let string = 'The product of ' + a + ' and ' + b + ' is ' + two_multiply + '.';
+  console.log('In multiply(), the value of string is: ', string);
+  let result = [two_multiply, string];
+  console.log('In multiply(), the value of result is: ', result);
+  return result;
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new
 // branch for your work on the next question!
