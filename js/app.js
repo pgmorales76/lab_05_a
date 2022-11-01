@@ -72,7 +72,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
 // testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch
-for your work on the next question!
+// for your work on the next question!
 
 /////////////////////////////////////
 /* Problem 4
@@ -100,7 +100,7 @@ function sumArray(sumArr) { //eslint-disable-line
 // testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for
-your work on the next question!
+// your work on the next question!
 
 /////////////////////////////////////
 /* Problem 5
@@ -157,4 +157,4 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 // testMultiplyAnyArray(testDynamicArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the
-repo following the instructions in Canvas.
+// repo following the instructions in Canvas.
