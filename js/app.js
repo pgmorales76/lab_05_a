@@ -22,7 +22,7 @@ function sum(a, b) { //eslint-disable-line
 
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
-
+// Testing
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a
 // new branch for your work on the next question!
 
@@ -71,8 +71,16 @@ function and see if the test passes.*/
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
-
+  // invoke the function to add a and b
+  let sumOfAandB = sum(a, b)[0]; // 11
+  console.log('the value of sumOfAandB is: ', sumOfAandB, 'the value of c is: ', c);
+  // invoke the function again to add c to a and b
+  let sumOfABandC = sum(sumOfAandB, c)[0]; // 16
+  console.log('the value of sumOfABandC is: ', sumOfABandC);
+  // invoke the function to multiply a and b
+  let multiplyAandB = multiply(a, b)[0]; // 28
+  console.log('the value of multiplyAandB is: ', multiplyAandB, 'the value of c is: ', c);
+  // invoke the function again to multiply a, b, and c
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
