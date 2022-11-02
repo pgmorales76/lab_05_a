@@ -84,10 +84,10 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
   let multiplyABandC = multiply(multiplyAandB, c)[0]; // 140
   console.log('The product of 4 and 7 and 5 is: ', multiplyABandC);
   // creating a string for the third element
-  let third_element = '4 and ' + a + '7 and ' + b + '5 sum to ' + c + sumOfABandC + '.';
+  let third_element = '4 and 7 and 5 ' + a + b + c + ' sum to ' + sumOfABandC + '.';
   console.log('4 and 7 and 5 sum to: ' + sumOfABandC);
   // creating a string for fourth element
-  let fourth_element = 'The product of 4 and ' + a + '7 and ' + b + '5 is: ' + c + multiplyABandC + '.';
+  let fourth_element = 'The product of 4 and 7 and 5 ' + a + b + c + ' is ' + multiplyABandC + '.';
   console.log('The product of 4 and 7 and 5 is: ' + multiplyABandC);
   // creating an array for the result
   let result = [sumOfABandC, multiplyABandC, third_element, fourth_element];
@@ -96,7 +96,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch
 // for your work on the next question!
