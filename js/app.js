@@ -38,7 +38,13 @@ function and see if the test passes.*/
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+  let two_multiply = a * b;
+  console.log('In multiply(), the value of two_multiply is: ', two_multiply);
+  let string = 'The product of ' + a + ' and ' + b + ' is ' + two_multiply + '.';
+  console.log('In multiply(), the value of string is: ', string);
+  let result = [two_multiply, string];
+  console.log('In multiply(), the value of result is: ', result);
+  return result;
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -65,6 +71,7 @@ function and see if the test passes.*/
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+
 
 }
 
