@@ -77,8 +77,10 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
   // invoke the function again to add c to a and b
   let sumOfABandC = sum(sumOfAandB, c)[0]; // 16
   console.log('the value of sumOfABandC is: ', sumOfABandC);
-  // return the sum of a, b, & c
-  return sumOfABandC;
+  // invoke the function to multiply a and b
+  let multiplyAandB = multiply(a, b)[0]; // 28
+  console.log('the value of multiplyAandB is: ', multiplyAandB, 'the value of c is: ', c);
+  // invoke the function again to multiply a, b, and c
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
