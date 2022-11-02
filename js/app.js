@@ -73,14 +73,17 @@ function and see if the test passes.*/
 function sumAndMultiply(a, b, c) { //eslint-disable-line
   // invoke the function to add a and b
   let sumOfAandB = sum(a, b)[0]; // 11
-  console.log('the value of sumOfAandB is: ', sumOfAandB, 'the value of c is: ', c);
+  console.log('The sum of 4 and 7 is: ', sumOfAandB, ' The value of c is: ', c);
   // invoke the function again to add c to a and b
   let sumOfABandC = sum(sumOfAandB, c)[0]; // 16
-  console.log('the value of sumOfABandC is: ', sumOfABandC);
+  console.log('The sum of 4 and 7 and 5 is: ', sumOfABandC);
   // invoke the function to multiply a and b
   let multiplyAandB = multiply(a, b)[0]; // 28
-  console.log('the value of multiplyAandB is: ', multiplyAandB, 'the value of c is: ', c);
+  console.log('The product of 4 and 7 is: ', multiplyAandB, 'The value of c is: ', c);
   // invoke the function again to multiply a, b, and c
+  let multiplyABandC = multiply(multiplyAandB, c)[0]; // 140
+  console.log('The product of 4 and 7 and 5 is: ', multiplyABandC);
+  
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
