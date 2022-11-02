@@ -84,11 +84,11 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
   let multiplyABandC = multiply(multiplyAandB, c)[0]; // 140
   console.log('The product of 4 and 7 and 5 is: ', multiplyABandC);
   // creating a string for the third element
-  let third_element = '4 and 7 and 5 ' + a + b + c + ' sum to ' + sumOfABandC + '.';
-  console.log('4 and 7 and 5 sum to: ' + sumOfABandC);
+  let third_element = a + ' and ' + b + ' and ' + c + ' sum to ' + sumOfABandC + '.';
+  console.log(third_element);
   // creating a string for fourth element
-  let fourth_element = 'The product of 4 and 7 and 5 ' + a + b + c + ' is ' + multiplyABandC + '.';
-  console.log('The product of 4 and 7 and 5 is: ' + multiplyABandC);
+  let fourth_element = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multiplyABandC + '.';
+  console.log(fourth_element);
   // creating an array for the result
   let result = [sumOfABandC, multiplyABandC, third_element, fourth_element];
   console.log('The array created is: ' + result);
