@@ -152,8 +152,13 @@ Test this function by hand in the console to get it working, and when you think 
 and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
-
+function multiplyArray(arr) { //eslint-disable-line
+  let product_of_array_at_0_and_1 = multiply(arr[0], arr[1]) [0]; // 6
+  let first_element = multiply(product_of_array_at_0_and_1, arr[2])[0]; // 24
+  let second_element = `The numbers ${arr} have a product of ${first_element}.`;
+  let result = [first_element, second_element];
+  console.log(result);
+  return result;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
