@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 /////////////////////////////////////
 /* Problem 1 (this is your demo that we'll solve in class)
 Write a function called sum() that takes in two numbers as arguments and then
@@ -12,12 +12,13 @@ the console to see if the test passes.*/
 // Write your code here
 // sum() takes in two numbers, and returns an array with a number and string
 // inside of it
-function sum(a, b) { // eslint-disable-line
+function sum(a, b) {
+  // eslint-disable-line
   let twoSum = a + b;
   // console.log('In sum(), the value of twoSum is: ', twoSum);
-  let string = 'The sum of ' + a + ' and ' + b + ' is ' + twoSum + '.';
+  let string = "The sum of " + a + " and " + b + " is " + twoSum + ".";
   // console.log('In sum(), the value of string is: ', string);
-  let result = [ twoSum, string ];
+  let result = [twoSum, string];
   // console.log('In sum(), the value of result is: ', result);
   return result;
 }
@@ -43,14 +44,15 @@ it is finished, uncomment the call for the testMultiply() function and see if
 the test passes.*/
 
 // Write your code here
-function multiply(a, b) { // eslint-disable-line
+function multiply(a, b) {
+  // eslint-disable-line
   let two_multiply = a * b;
-  console.log('In multiply(), the value of two_multiply is: ', two_multiply);
+  console.log("In multiply(), the value of two_multiply is: ", two_multiply);
   let string =
-      'The product of ' + a + ' and ' + b + ' is ' + two_multiply + '.';
-  console.log('In multiply(), the value of string is: ', string);
-  let result = [ two_multiply, string ];
-  console.log('In multiply(), the value of result is: ', result);
+    "The product of " + a + " and " + b + " is " + two_multiply + ".";
+  console.log("In multiply(), the value of string is: ", string);
+  let result = [two_multiply, string];
+  console.log("In multiply(), the value of result is: ", result);
   return result;
 }
 
@@ -83,31 +85,44 @@ it is finished, uncomment the call for the testSumAndMultiply()
 function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { // eslint-disable-line
+function sumAndMultiply(a, b, c) {
+  // eslint-disable-line
   // invoke the function to add a and b
   let sumOfAandB = sum(a, b)[0]; // 11
-  console.log('The sum of 4 and 7 is: ', sumOfAandB, ' The value of c is: ', c);
+  console.log("The sum of 4 and 7 is: ", sumOfAandB, " The value of c is: ", c);
   // invoke the function again to add c to a and b
   let sumOfABandC = sum(sumOfAandB, c)[0]; // 16
-  console.log('The sum of 4 and 7 and 5 is: ', sumOfABandC);
+  console.log("The sum of 4 and 7 and 5 is: ", sumOfABandC);
   // invoke the function to multiply a and b
   let multiplyAandB = multiply(a, b)[0]; // 28
-  console.log('The product of 4 and 7 is: ', multiplyAandB,
-              'The value of c is: ', c);
+  console.log(
+    "The product of 4 and 7 is: ",
+    multiplyAandB,
+    "The value of c is: ",
+    c
+  );
   // invoke the function again to multiply a, b, and c
   let multiplyABandC = multiply(multiplyAandB, c)[0]; // 140
-  console.log('The product of 4 and 7 and 5 is: ', multiplyABandC);
+  console.log("The product of 4 and 7 and 5 is: ", multiplyABandC);
   // creating a string for the third element
   let third_element =
-      a + ' and ' + b + ' and ' + c + ' sum to ' + sumOfABandC + '.';
+    a + " and " + b + " and " + c + " sum to " + sumOfABandC + ".";
   console.log(third_element);
   // creating a string for fourth element
-  let fourth_element = 'The product of ' + a + ' and ' + b + ' and ' + c +
-                       ' is ' + multiplyABandC + '.';
+  let fourth_element =
+    "The product of " +
+    a +
+    " and " +
+    b +
+    " and " +
+    c +
+    " is " +
+    multiplyABandC +
+    ".";
   console.log(fourth_element);
   // creating an array for the result
-  let result = [ sumOfABandC, multiplyABandC, third_element, fourth_element ];
-  console.log('The array created is: ' + result);
+  let result = [sumOfABandC, multiplyABandC, third_element, fourth_element];
+  console.log("The array created is: " + result);
   return result;
 }
 
@@ -137,20 +152,19 @@ it is finished, uncomment the call for the testSumArray() function and see if
 the test passes.*/
 
 // Write your code here
-let testArray = [ 2, 3, 4 ]; // eslint-disable-line
+let testArray = [2, 3, 4]; // eslint-disable-line
 
-function sumArray(arr) {                                // eslint-disable-line
+function sumArray(arr) {
+  // eslint-disable-line
   let sum_of_array_at_0_and_1 = sum(arr[0], arr[1])[0]; // 5
   // console.log('The sum of the array at [0] and [1] is: ',
   // sum_of_array_at_0_and_1, ' The value of the array at [2] is: ', arr[2]);
-  let sum_of_array_at_0_and_1_and_2 =
-      sum(sum_of_array_at_0_and_1, arr[2])[0]; // 9
+  let sum_of_array_at_0_and_1_and_2 = sum(sum_of_array_at_0_and_1, arr[2])[0]; // 9
   // console.log('The sum of the array at [0] and [1] and [2] is: ',
   // sum_of_array_at_0_and_1_and_2);
-  let second_element = `${arr} was passed in as an array of numbers, and ${
-      sum_of_array_at_0_and_1_and_2} is their sum.`;
+  let second_element = `${arr} was passed in as an array of numbers, and ${sum_of_array_at_0_and_1_and_2} is their sum.`;
   // console.log('The second element is: ' + second_element);
-  let result = [ sum_of_array_at_0_and_1_and_2, second_element ];
+  let result = [sum_of_array_at_0_and_1_and_2, second_element];
   console.log(result);
   return result;
 }
@@ -183,7 +197,8 @@ it is finished, uncomment the call for the testMultiplyArray() function
 and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { // eslint-disable-line
+function multiplyArray(multArr) {
+  // eslint-disable-line
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
@@ -220,9 +235,10 @@ it is finished, uncomment the call for the testMultiplyAnyArray() function and
 see if the test passes.*/
 
 // Write your code here
-let testDynamicArray = [ 1, 2, 3, 4, 5 ]; // eslint-disable-line
+let testDynamicArray = [1, 2, 3, 4, 5]; // eslint-disable-line
 
-function multiplyAnyArray(dynamicArray) { // eslint-disable-line
+function multiplyAnyArray(dynamicArray) {
+  // eslint-disable-line
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
